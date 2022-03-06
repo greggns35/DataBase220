@@ -11,11 +11,11 @@ create table customers
 
 create table orders
 (
-    id        int auto_increment
+    id          int auto_increment
         primary key,
-    firstname varchar(20) null,
-    lastname  varchar(20) null,
-    company   varchar(20) null,
+    product     varchar(20) null,
+    cost        int         null,
+    customersId int         null,
     constraint id
         unique (id)
 );
